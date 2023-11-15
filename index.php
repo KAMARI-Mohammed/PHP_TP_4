@@ -5,29 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des Clients</title>
     <style>
-        /* Appliquer des styles au tableau */
-        table {
-            width: 40%;
-            border-collapse: collapse;
-            margin-top: 10px; /* Marge ajustée */
-        }
+       <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
 
-        /* Style pour les en-têtes de tableau */
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
+    table {
+      width: 30%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
 
-        /* Alternance des couleurs de ligne pour une meilleure lisibilité */
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
+    th, td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #3498db;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+
+    td {
+      max-width: 200px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    h1 {
+      color: #333;
+      background-color: #3498db;
+      padding: 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width: 600px) {
+      th, td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
     </style>
 </head>
 <body>
 
-<h1>Liste des Clients</h1>
+<h1>Liste des Clients : </h1>
 
 
     </thead>
